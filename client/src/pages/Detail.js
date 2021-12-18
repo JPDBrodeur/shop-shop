@@ -50,7 +50,7 @@ function Detail() {
         });
       });
     }
-  }, [products, data, dispatch, id]);
+  }, [products, loading, data, dispatch, id]);
 
   const addToCart = () => {
     const itemInCart = cart.find((cartItem) => cartItem._id === id);
